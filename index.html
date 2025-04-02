@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch This Video</title>
+    <style>
+        /* Full-page background setup */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background: url('BG.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: black;
+            text-align: center;
+        }
+        
+        /* Heading styling */
+        .heading {
+            position: absolute;
+            top: 5%;
+            width: 100%;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Video container */
+        .video-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10vh;
+        }
+        
+        /* Video styling */
+        video {
+            max-width: 80%;
+            max-height: 60vh;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* Bottom left text styling */
+        .bottom-left-text {
+            position: absolute;
+            bottom: -4%;
+            left: 3%;
+            font-size: 1.2rem;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Footer styling */
+        .footer {
+            position: absolute;
+            bottom: 1%;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">Introducing Capital Linguists<br>Watch the Video</div>
+    <div class="video-container">
+        <video width="1080" height="720" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="bottom-left-text">
+        <ul>
+            <li>Fast Customer Service</li>
+            <li>Expert Linguists with Specialized Knowledge</li>
+            <li>Confidentiality and Security</li>
+        </ul>
+    </div>
+    <div class="footer">info@capitallinguists.com</div>
+</body>
+</html>
