@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch This Video</title>
+    <style>
+        /* Center the video */
+        body {
+            display: flex;
+            justify-content: center;  /* Centers horizontally */
+            align-items: center;  /* Centers vertically */
+            height: 100vh;  /* Full height of the screen */
+            margin: 0;
+            background-color: #f4f4f4; /* Light background */
+        }
+        video {
+            max-width: 100%;
+            max-height: 90vh; /* Limits the video height */
+            border-radius: 10px; /* Optional: Rounds the video corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+        }
+    </style>
+</head>
+<body>
+    <video width="720" height="480" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
